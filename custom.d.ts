@@ -5,6 +5,7 @@ declare global {
       NODE_ENV: 'development' | 'production'
       // Discord
       DISCORD_TOKEN: string
+    }
   }
 }
 // If this file has no import/export statements (i.e. is a script)
