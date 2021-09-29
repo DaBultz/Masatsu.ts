@@ -5,6 +5,7 @@ declare global {
       NODE_ENV: 'development' | 'production'
       // Discord
       DISCORD_TOKEN: string
+      DISCORD_APPLICATION_ID: string
     }
   }
 }

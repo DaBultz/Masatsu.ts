@@ -3,10 +3,12 @@ import { DiscordEvent } from '../../src/enums/discordEvent'
 
 export default class Ready extends Event {
   constructor() {
-    super(DiscordEvent.ClientReady)
+    super({
+      event: DiscordEvent.ClientReady
+    })
   }
 
   onEvent(): void {
-    console.log('Bot is ready')
+    console.log('Bot is ready!!!')
   }
 }

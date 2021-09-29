@@ -1,7 +1,7 @@
 export enum DiscordEvent {
   RateLimit = 'rateLimit',
   InvalidRequestWarning = 'invalidRequestWarning',
-  ClientReady = 'ready',
+  ClientReady = 'ready', Ready = 'ready',
   ApplicationCommandCreate = 'applicationCommandCreate',
   ApplicationCommandDelete = 'applicationCommandDelete',
   ApplicationCommandUpdate = 'applicationCommandUpdate',

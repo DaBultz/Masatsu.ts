@@ -6,7 +6,6 @@ dotenv.config()
 
 const bot = new Bot({
   eventDir: path.join(__dirname, 'event'),
-  commandsDir: path.join(__dirname, 'commands')
+  commandsDir: path.join(__dirname, 'commands'),
+  token: process.env.DISCORD_TOKEN
 })
-
-void bot.login(process.env.DISCORD_TOKEN)
