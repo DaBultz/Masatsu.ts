@@ -1,8 +1,25 @@
 # Masatsu Framework
 
-This is the framework powering the Masatsu Bot
+## Goals
+
+**Goal 1: Easy to pickup**, it should not change fundamentally how discord.js works, everything which works in Discord.js should work in this framework as well
+
+**Goal 2: Reduce Boilerplate**, all bots have a certain amount of shared functionality, this framework should do all of this this so the bot can focus on developing their bot
+
+## Setup
 
 ## Features
 
-- Event Handling
-- Command Handling
+- [x] Event Handling
+- [ ] Command Handling
+  - Slash commands
+- [x] Automatic Intents
+- [ ] Test Mode
+  - This only make the bot usable from the test servers
+
+## Future Goals
+
+- [ ] Per Server Configuration
+- [ ] Built-in Permissions System
+- [ ] Legacy Commands
+- [ ] Plugin System 
