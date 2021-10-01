@@ -69,9 +69,12 @@ export const getIntentFromEvent = (event: DiscordEvent): number[] => {
     // GUILD_MESSAGE_TYPING (1 << 11) & DIRECT_MESSAGE_TYPING (1 << 14)
     case DiscordEvent.TypingStart: return [Intents.FLAGS.GUILD_MESSAGE_TYPING, Intents.FLAGS.DIRECT_MESSAGE_TYPING]
 
-    case DiscordEvent.ClientReady: return []
-
     default:
+      // Check if the event is in the DiscordEvent enum
+      if (Object.values(DiscordEvent).includes(event)) {
+        return []
+      }
+
       throw new Error(`${event} was not recongized as an event`)
   }
 }

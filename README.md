@@ -12,10 +12,10 @@
 
 - [x] Event Handling
 - [ ] Command Handling
-  - Slash commands
+  - Slash commands only for now
 - [x] Automatic Intents
 - [ ] Test Mode
-  - This only make the bot usable from the test servers
+  - This only make the bot usable from the test servers only
 
 ## Future Goals
 
