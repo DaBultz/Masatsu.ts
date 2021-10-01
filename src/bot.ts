@@ -1,4 +1,5 @@
 import { Client, Intents } from 'discord.js'
+import { CommandHandler } from './commandHandle'
 import { DiscordEvent } from './enums/discordEvent'
 import { EventHandler } from './eventHandler'
 import { IBotOptions } from './Interfaces/botOptions'
@@ -7,6 +8,7 @@ import { getIntentFromEvent } from './utils/intents'
 export class Bot extends Client {
   readonly intents: Intents
   eventHandler: EventHandler
+  commandHandler: CommandHandler
 
   constructor(options: IBotOptions) {
     super({
@@ -17,6 +19,7 @@ export class Bot extends Client {
 
     // Setup EventHandler
     this.eventHandler = new EventHandler(options.eventDir, this)
+    this.commandHandler = new CommandHandler(options.commandsDir, this)
 
     void this.login(options.token)
   }
