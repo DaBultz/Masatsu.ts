@@ -1,6 +1,8 @@
-import { readdir } from 'fs/promises'
-import * as path from 'path'
 import { Bot } from './bot'
+import { scanFolder } from './utils/filesystem'
+import { Event } from './base/event'
+import { Signale } from 'signale'
+import { getLogger } from './utils/logger'
 
 export class EventHandler {
   private readonly bot: Bot
@@ -12,12 +14,12 @@ export class EventHandler {
   }
 
   async loadEvents(): Promise<void> {
-    const events: string[] = await (await readdir(this.path)).filter(file => file.endsWith('.js') || file.endsWith('.ts'))
+    const events = await scanFolder(this.path)
 
     for (const event of events) {
       // NOTE: Eslint is disabled on next line since "default" is in Javascript
       // eslint-disable-next-line
-      const e = new (await import(path.join(this.path, event))).default()
+      const e: Event = new (await import(event)).default()
       this.bot.addEvent(e.event, e.onEvent)
     }
   }

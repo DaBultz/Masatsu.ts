@@ -1,3 +1,5 @@
+import { SlashCommandBuilder } from '@discordjs/builders'
+
 export interface ICommand {
-  name: string
+  command: SlashCommandBuilder
 }

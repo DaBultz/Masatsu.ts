@@ -1,3 +1,4 @@
+import { bot } from '..'
 import { Event } from '../../src/base/event'
 import { DiscordEvent } from '../../src/enums/discordEvent'
 
@@ -9,6 +10,6 @@ export default class Ready extends Event {
   }
 
   onEvent(): void {
-    console.log('Bot is ready!!!')
+    bot.logger.success('Bot is ready!!!')
   }
 }

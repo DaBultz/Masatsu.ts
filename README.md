@@ -4,7 +4,7 @@
 
 **Goal 1: Easy to pickup**, it should not change fundamentally how discord.js works, everything which works in Discord.js should work in this framework as well
 
-**Goal 2: Reduce Boilerplate**, all bots have a certain amount of shared functionality, this framework should do all of this this so the bot can focus on developing their bot
+**Goal 2: Reduce Boilerplate**, all bots have a certain amount of shared functionality, this framework should do all of this so the bot can focus on developing their bot
 
 ## Setup
 
@@ -14,8 +14,10 @@
 - [ ] Command Handling
   - Slash commands only for now
 - [x] Automatic Intents
-- [ ] Test Mode
+- [x] Test Mode
   - This only make the bot usable from the test servers only
+- [ ] Built-in Logging
+  - This is powered by [Signale](https://github.com/klaussinani/signale)
 
 ## Future Goals
 
@@ -23,3 +25,4 @@
 - [ ] Built-in Permissions System
 - [ ] Legacy Commands
 - [ ] Plugin System 
+- [ ] Custom Logger + Changeable with other loggers

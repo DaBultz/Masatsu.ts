@@ -7,7 +7,7 @@ export class Command {
     this.command = command
   }
 
-  onCommand(): void {
-    throw new Error(`onEvent() in ${this.command.name} have not being overwritten`)
+  onCommand(...args: any[]): any {
+    throw new Error(`onEvent() in ${this.command.command.name} have not being overwritten`)
   }
 }
