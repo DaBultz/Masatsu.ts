@@ -1,4 +1,6 @@
-# Masatsu Framework
+# Masatsu Framework - Alpha
+
+**DISCLAIMER: THIS FRAMEWORK IS IN ALPHA AND IS BEING WORKED ON**
 
 ## Goals
 
