@@ -42,7 +42,7 @@ export class Bot extends Client {
   }
 
   async login(token?: string): Promise<string> {
-    const log = getLogger('Masatsu -> Core', { interactive: false })
+    const log = getLogger('Masatsu -> Core', { interactive: true })
     const maxSteps = 5
     let step = 1
 
@@ -64,6 +64,7 @@ export class Bot extends Client {
     const login = await super.login(token)
 
     log.success('[%d/%d] Started Masatsu Framework...', step++, maxSteps)
+    log.breakInteractiveChain()
     return login
   }
 
