@@ -11,12 +11,12 @@
 ## Features
 
 - [x] Event Handling
-- [ ] Command Handling
+- [X] Command Handling
   - Slash commands only for now
 - [x] Automatic Intents
 - [x] Test Mode
   - This only make the bot usable from the test servers only
-- [ ] Built-in Logging
+- [X] Built-in Logging
   - This is powered by [Signale](https://github.com/klaussinani/signale)
 
 ## Future Goals
