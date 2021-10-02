@@ -1,8 +1,6 @@
 import { Bot } from './bot'
 import { scanFolder } from './utils/filesystem'
 import { Event } from './base/event'
-import { Signale } from 'signale'
-import { getLogger } from './utils/logger'
 
 export class EventHandler {
   private readonly bot: Bot

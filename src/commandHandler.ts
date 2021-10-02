@@ -6,8 +6,6 @@ import { Routes } from 'discord-api-types/v9'
 import { Collection, Interaction } from 'discord.js'
 import { Command } from './base/command'
 import { DiscordEvent } from './enums/discordEvent'
-import { Signale } from 'signale'
-import { getLogger } from './utils/logger'
 
 export class CommandHandler {
   private readonly commandsArray: any[]
@@ -63,10 +61,10 @@ export class CommandHandler {
   async registerCommands(): Promise<void> {
     if (this.bot.settings.testMode === true) {
       for (const server in this.bot.settings.testServers) {
-        // await this.rest.put(Routes.applicationGuildCommands(this.bot.settings.applicationID, server), { body: this.commandsArray })
+        await this.rest.put(Routes.applicationGuildCommands(this.bot.settings.applicationID, server), { body: this.commandsArray })
       }
     } else {
-      // await this.rest.put(Routes.applicationCommands(this.bot.settings.applicationID), { body: this.commandsArray })
+      await this.rest.put(Routes.applicationCommands(this.bot.settings.applicationID), { body: this.commandsArray })
     }
   }
 

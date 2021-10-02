@@ -1,4 +1,3 @@
-import { Signale } from 'signale'
 
 export interface IBotOptions {
   eventDir: string
