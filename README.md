@@ -6,7 +6,7 @@
 
 **Goal 1: Easy to pickup**, it should not change fundamentally how discord.js works, everything which works in Discord.js should work in this framework as well
 
-**Goal 2: Reduce Boilerplate**, all bots have a certain amount of shared functionality, this framework should do all of this so the bot can focus on developing their bot
+**Goal 2: Reduce Boilerplate**, all bots have a certain amount of shared functionality, this framework should do all of this so the developer can focus on developing their bot
 
 ## Setup
 
