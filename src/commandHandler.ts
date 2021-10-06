@@ -4,7 +4,7 @@ import { scanFolder } from './utils/filesystem'
 import { REST } from '@discordjs/rest'
 import { Routes } from 'discord-api-types/v9'
 import { Collection, Interaction } from 'discord.js'
-import { Command } from './base/command'
+import { Command } from './base'
 import { DiscordEvent } from './enums/discordEvent'
 
 export class CommandHandler {
