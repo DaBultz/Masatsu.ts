@@ -10,6 +10,8 @@
 
 ## Setup
 
+Coming soon
+
 ## Features
 
 - [x] Event Handling
@@ -23,7 +25,7 @@
 
 ## Future Goals
 
-- [ ] Per Server Configuration
+- [ ] Per Server Configurationr
 - [ ] Built-in Permissions System
 - [ ] Legacy Commands
 - [ ] Plugin System 
