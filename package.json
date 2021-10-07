@@ -2,8 +2,19 @@
   "name": "masatsu.ts",
   "version": "0.1.0",
   "description": "Discord.js Bot Framework Written in Typescript",
-  "main": "",
+  "author": "DaBultz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaBultz/Masatsu.ts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaBultz/Masatsu.ts.git"
+  },
+  "homepage": "https://github.com/DaBultz/Masatsu.ts#readme",
+  "main": "./dist/index.js",
   "scripts": {
+    "build": "tsc",
     "lint": "eslint .",
     "lint:fix": "eslint . -fix",
     "watch:test": "ts-node-dev --respawn ./test/index.ts"
@@ -40,5 +51,17 @@
     "underlinePrefix": false,
     "underlineSuffix": false,
     "uppercaseLabel": true
-  }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "discord.js",
+    "typescript",
+    "framework",
+    "discord",
+    "bot"
+  ]
 }
