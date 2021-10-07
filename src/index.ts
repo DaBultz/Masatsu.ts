@@ -1,4 +1,8 @@
 import { Bot } from './bot'
 import { Command, Event } from './base'
 
-export { Bot, Command, Event }
+export {
+  Bot,
+  Command,
+  Event
+}
