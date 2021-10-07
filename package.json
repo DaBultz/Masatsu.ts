@@ -1,6 +1,6 @@
 {
   "name": "masatsu.ts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Discord.js Bot Framework Written in Typescript",
   "author": "DaBultz",
   "license": "MIT",
@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/DaBultz/Masatsu.ts#readme",
   "main": "./dist/index.js",
+  "typings": "./dist",
   "scripts": {
     "build": "tsc",
     "lint": "eslint .",
