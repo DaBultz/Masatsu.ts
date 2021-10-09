@@ -1,4 +1,4 @@
-import { bot } from '..'
+import { bot } from '../index'
 import { Event } from '../../src/base/event'
 import { DiscordEvent } from '../../src/enums/discordEvent'
 
